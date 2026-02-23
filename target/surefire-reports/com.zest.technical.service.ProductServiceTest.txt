@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: com.zest.technical.service.ProductServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 28.19 s <<< FAILURE! -- in com.zest.technical.service.ProductServiceTest
+com.zest.technical.service.ProductServiceTest.testCreateProduct -- Time elapsed: 27.81 s <<< ERROR!
+java.lang.NoSuchMethodError: 'void com.zest.technical.model.Product.<init>(long, java.lang.String, java.lang.String, java.lang.String)'
+	at com.zest.technical.service.ProductServiceTest.setUp(ProductServiceTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.zest.technical.service.ProductServiceTest.testUpdateProduct -- Time elapsed: 0.042 s <<< ERROR!
+java.lang.NoSuchMethodError: 'void com.zest.technical.model.Product.<init>(long, java.lang.String, java.lang.String, java.lang.String)'
+	at com.zest.technical.service.ProductServiceTest.setUp(ProductServiceTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.zest.technical.service.ProductServiceTest.testGetProductById -- Time elapsed: 0.037 s <<< ERROR!
+java.lang.NoSuchMethodError: 'void com.zest.technical.model.Product.<init>(long, java.lang.String, java.lang.String, java.lang.String)'
+	at com.zest.technical.service.ProductServiceTest.setUp(ProductServiceTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.zest.technical.service.ProductServiceTest.testDeleteProduct -- Time elapsed: 0.019 s <<< ERROR!
+java.lang.NoSuchMethodError: 'void com.zest.technical.model.Product.<init>(long, java.lang.String, java.lang.String, java.lang.String)'
+	at com.zest.technical.service.ProductServiceTest.setUp(ProductServiceTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.zest.technical.service.ProductServiceTest.testGetAllProducts -- Time elapsed: 0.081 s <<< ERROR!
+java.lang.NoSuchMethodError: 'void com.zest.technical.model.Product.<init>(long, java.lang.String, java.lang.String, java.lang.String)'
+	at com.zest.technical.service.ProductServiceTest.setUp(ProductServiceTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

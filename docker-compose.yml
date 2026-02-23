@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  # Spring Boot Application
+  app:
+    image: openjdk:17-jdk-slim  # Use OpenJDK image
+    container_name: technical-assessment
+    build: .
+    ports:
+      - "8080:8080"  # Map container port to host port
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/zest_productdb  # MySQL URL
+      - SPRING_DATASOURCE_USERNAME=root  # MySQL root username
+      - SPRING_DATASOURCE_PASSWORD=root  # MySQL root password
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=none  # Hibernate DDL auto (update on each start)
+      - SPRING_PROFILES_ACTIVE=dev  # Active Spring profile (prod)
+    depends_on:
+      - mysql  # Make sure MySQL service is up before the app
+
+  # MySQL Database
+  mysql:
+    image: mysql:8.0  # Use MySQL 8 image
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root  # Set root password
+      MYSQL_DATABASE: zest_productdb  # Create a database
+      MYSQL_USER: root  # MySQL user
+      MYSQL_PASSWORD: root  # MySQL password
+    ports:
+      - "3306:3306"  # Expose MySQL port
+    volumes:
+      - mysql-data:/var/lib/mysql  # Persist data
+
+volumes:
+  mysql-data:  # Named volume to persist data

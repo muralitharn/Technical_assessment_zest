@@ -1,0 +1,16 @@
+com\zest\technical\config\SwaggerConfig.class
+com\zest\technical\data\AuthenticationRequest.class
+com\zest\technical\ProductApplication.class
+com\zest\technical\repository\ItemRepository.class
+com\zest\technical\service\AuthenticationService.class
+com\zest\technical\config\JWTConfig.class
+com\zest\technical\controller\ProductController.class
+com\zest\technical\data\AuthenticationResponse.class
+com\zest\technical\config\SecurityConfig.class
+com\zest\technical\controller\AuthenticationController.class
+com\zest\technical\model\Item.class
+com\zest\technical\model\Product.class
+com\zest\technical\security\JWTAuthenticationFilter.class
+com\zest\technical\service\ItemService.class
+com\zest\technical\service\ProductService.class
+com\zest\technical\repository\ProductRepository.class
